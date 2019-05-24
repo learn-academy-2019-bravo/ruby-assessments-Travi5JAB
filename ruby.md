@@ -5,12 +5,15 @@ Try your best to answer each question on your own before looking up the answer o
 
 #### 1. What is a method in Ruby? How is it different or similar to functions in JavaScript?
 
+a method in ruby has different syntax and uses def
 
-#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance. 
+#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance.
 
 
 [Your Answer]
 
+a class can gain access to another classes information through inheritance
+a class can inherit methods or variables set up in a parent class
 
 [Googled Answer]
 
@@ -19,12 +22,26 @@ Try your best to answer each question on your own before looking up the answer o
 
 //Your Answer
 
+rspec is a test run on ruby code
+rspec uses it "your message" do format to test and see it input gives the expected output
+
 //Googled Answer
 
 
-#### 4. Name three possible non-inheritance relationships between ruby objects? 
+#### 4. Name three possible non-inheritance relationships between ruby objects?
 
 //Your Answer
+
+there can be a relationship between two classes that are are associated but do not directly inherit from each other
+
+examples:
+  a dog class and a bark class
+
+  a fruit class and a vitamin class
+
+  a car class and a engine class
+
+these examples could be a different class that is associated but doesnt  directly inherit from the other class
 
 //Googled Answer
 
@@ -35,10 +52,15 @@ Try your best to answer each question on your own before looking up the answer o
 x = 1022
 puts "I am printing a random number #{x}"
 ```
+string interpolation... it is used to more cleanly integrate a variable into a string
 
 #### 6. How do you feel about testing right now? What potential pros/cons/barriers/advantages do you see to implementing BDD in your own code?
 
 //Your Answer
+
+i do not feel confidant about testing at the moment
+i feel it is important to know how to test in order to make sure your code runs the way you want it to
+getting a handle on writing the tests properly and testing for edge cases may be a barrier i run into
 
 //Googled Answer
 
@@ -46,6 +68,22 @@ puts "I am printing a random number #{x}"
 #### 7. What is an instance variable in Ruby? How is it different from a normal, local variable?
 
 //Your Answer
+
+an instance variable is indicated with the @ symbol
+an instance variable can be set from outside a class and attached to a particular instance of a new class
+
+class Colors
+    def initialize(color)
+        @color = color
+    end
+    def say_color
+        @color
+    end
+end
+new_color = Colors.new("green")
+new_color2 = Colors.new("red")
+
+in this example new_color is set to green but new_color2 is red
 
 //Googled Answer
 
